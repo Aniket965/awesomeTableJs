@@ -25,7 +25,7 @@
     "url": "https://github.com/farshadjahanmanesh/awesomeTableJs/issues"
   },
   "homepage": "https://github.com/farshadjahanmanesh/awesomeTableJs#readme",
-    "devDependencies": {
+  "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-jshint": "latest",
     "jshint-stylish": "latest",

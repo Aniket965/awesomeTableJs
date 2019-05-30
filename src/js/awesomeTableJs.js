@@ -171,14 +171,14 @@
     //its hard to save filtered data, for each key up,so i decide to save data after 2sec on last key up
     //Filter Table
     AwesomeTableJs.prototype.filter = function (inputElement) {
-        var filterText = inputElement.value;
+        var filterText = inputElement.value.toLowerCase();
         if (sessionStorage.awesomeTabledata) {
             var result = JSON.parse(sessionStorage.awesomeTabledata);
             var filteredArray = [];
             console.log(filterText);
             for (var i = 0, reslen = result.length; i < reslen; i++) {
                 for (var j = 0, objLen = this.jsonKeys.length; j < objLen; j++) {
-                    if (result[i][this.jsonKeys[j]].toString().match(filterText)) {
+                    if (result[i][this.jsonKeys[j]].toString().toLowerCase().match(filterText)) {
                         filteredArray.push(result[i]);
                         break;
                     }
